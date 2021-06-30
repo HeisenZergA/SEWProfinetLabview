@@ -1,0 +1,215 @@
+<Object Name="HWConfiguration">
+  <ClassRID>1</ClassRID>
+  <Object Name="PROFINET Driver">
+    <ClassRID>2</ClassRID>
+    <Object Name="PROFINET-Schnittstelle">
+      <ClassRID>3</ClassRID>
+      <Key AID="2">32768</Key>
+      <Variable Name="LADDR">
+        <AID>10</AID>
+        <Value Datatype="Scalar" Valuetype="UINT16">64</Value>
+      </Variable>
+      <Variable Name="DataRecordsConf">
+        <AID>11</AID>
+        <Value Datatype="SparseArray" Valuetype="BLOB">
+          <Field Key="4097" Length="12">300600080101000000000000</Field>
+          <Field Key="4096" Length="20">3000001001000000C0A81E04FFFFFF00C0A81E04</Field>
+          <Field Key="4100" Length="12">300900080101000000000000</Field>
+          <Field Key="4099" Length="32">A201001C010000000014000070726F66696E6574786164726976657234393333</Field>
+          <Field Key="65536" Length="12">F00000080100040000030000</Field>
+          <Field Key="32881" Length="12">025000080100000000000001</Field>
+          <Field Key="143616" Length="20">F001001001000000002A00080064000000000000</Field>
+        </Value>
+      </Variable>
+      <Link>
+        <AID>16</AID>
+        <TargetRID>2296447233</TargetRID>
+      </Link>
+    </Object>
+    <Object Name="Port">
+      <ClassRID>4</ClassRID>
+      <Key AID="2">32769</Key>
+      <Variable Name="LADDR">
+        <AID>10</AID>
+        <Value Datatype="Scalar" Valuetype="UINT16">65</Value>
+      </Variable>
+      <Variable Name="DataRecordsConf">
+        <AID>11</AID>
+        <Value Datatype="SparseArray" Valuetype="BLOB">
+          <Field Key="32811" Length="36">020000200100000000018001020A001401000108706F72742D3030310570756D70650000</Field>
+        </Value>
+      </Variable>
+    </Object>
+  </Object>
+  <Object Name="PROFINET IO-System">
+    <RID>2296447233</RID>
+    <ClassRID>5</ClassRID>
+    <Variable Name="LADDR">
+      <AID>10</AID>
+      <Value Datatype="Scalar" Valuetype="UINT16">257</Value>
+    </Variable>
+    <Variable Name="IOsysParamConfig">
+      <AID>15</AID>
+      <Value Datatype="SparseArray" Valuetype="BLOB">
+        <Field Key="12352" Length="20">3040001001000000002A000800640258012C0000</Field>
+      </Value>
+    </Variable>
+    <Object Name="pumpe">
+      <GSDMLFile>gsdml-v2.34-sew-movi-c-decentralized-electronics-20200731-071447.xml</GSDMLFile>
+      <ClassRID>6</ClassRID>
+      <Key AID="3">1</Key>
+      <Variable Name="DeactivatedConfig">
+        <AID>4</AID>
+        <Value Datatype="Scalar" Valuetype="BOOL">false</Value>
+      </Variable>
+      <Variable Name="LADDR">
+        <AID>10</AID>
+        <Value Datatype="Scalar" Valuetype="UINT16">263</Value>
+      </Variable>
+      <Variable Name="IODevParamConfig">
+        <AID>13</AID>
+        <Value Datatype="SparseArray" Valuetype="BLOB">
+          <Field Key="12544" Length="64">3100003C0101000001000001B3DDD445F927634A93D262AB5C644D774000001100C8000000000000000000000000000000000000000000000000000000000000</Field>
+          <Field Key="12384" Length="32">3060001C01000000010A000E00010FE400000001000010000000000000000000</Field>
+          <Field Key="12546" Length="256">310200FC01000000000200780100000100018892000000000002002680000080000800010000FFFFFFFF001400140000C000000000000000000000000000000000000000000100000000000500000001000000000000800000010000000080010002000000008002000300000002000100040000000000010002000100250000000000780100000200028892000000000002002680010080000800010000FFFFFFFF001400140000C0000000000000000000000000000000000000000001000000000001000200010005000000000005000000010000000000008000000100000000800100020000000080020003000000020001000400000000000000000000</Field>
+          <Field Key="12545" Length="192">310100BC0100000000010000000000000002007401000000000000007532000080020000000400010000000000010000000000010000000100010000000080000000000000020000000000010000000100010000000080010000000000030000000000010000000100010000000080020000000000040000000000010000000100010000000000380100000200000000002000000001000000010001000000000001000300000001002000010001000000000000002000010001000000000000</Field>
+          <Field Key="12548" Length="64">3104003C010000000002001400010400000100010000FFFFFFFF00000000001400020400000100010000FFFFFFFF000000000000000000000000000000000000</Field>
+          <Field Key="12551" Length="28">310700180100000001000001889200000000000000070003C000A000</Field>
+        </Value>
+      </Variable>
+      <Object Name="Network Parameters">
+        <ClassRID>11</ClassRID>
+        <Variable Name="NetworkParamConfig">
+          <AID>12</AID>
+          <Value Datatype="SparseArray" Valuetype="BLOB">
+            <Field Key="4099" Length="20">A2010010010000000005000070756D7065000000</Field>
+            <Field Key="4096" Length="20">3000001001000000C0A81E03FFFFFF00C0A81E03</Field>
+            <Field Key="4102" Length="42">3010002601000000000100201D706F72742D3030312E70726F66696E6574786164726976657234393333</Field>
+            <Field Key="4103" Length="12">301100080101000000000000</Field>
+          </Value>
+        </Variable>
+      </Object>
+      <Object Name="pumpe">
+        <ClassRID>7</ClassRID>
+        <Key AID="1">0</Key>
+        <Object Name="pumpe">
+          <ClassRID>8</ClassRID>
+          <Key AID="2">65520</Key>
+          <Variable Name="LADDR">
+            <AID>10</AID>
+            <Value Datatype="Scalar" Valuetype="UINT16">258</Value>
+          </Variable>
+          <Variable Name="DataRecordsConf">
+            <AID>11</AID>
+            <Value Datatype="SparseArray" Valuetype="BLOB" />
+          </Variable>
+          <Variable Name="DataRecordsTransferSequence">
+            <AID>14</AID>
+            <Value Datatype="Scalar" Valuetype="BLOB" Length="0" />
+          </Variable>
+        </Object>
+        <Object Name="DFC2xA V1.0">
+          <ClassRID>9</ClassRID>
+          <Key AID="2">1</Key>
+          <Variable Name="LADDR">
+            <AID>10</AID>
+            <Value Datatype="Scalar" Valuetype="UINT16">262</Value>
+          </Variable>
+          <Variable Name="DataRecordsConf">
+            <AID>11</AID>
+            <Value Datatype="SparseArray" Valuetype="BLOB">
+              <Field Key="8200" Length="1">00</Field>
+            </Value>
+          </Variable>
+          <Variable Name="DataRecordsTransferSequence">
+            <AID>14</AID>
+            <Value Datatype="Scalar" Valuetype="BLOB" Length="0" />
+          </Variable>
+        </Object>
+        <Object Name="PN-IO">
+          <ClassRID>9</ClassRID>
+          <Key AID="2">32768</Key>
+          <Variable Name="LADDR">
+            <AID>10</AID>
+            <Value Datatype="Scalar" Valuetype="UINT16">259</Value>
+          </Variable>
+          <Variable Name="DataRecordsConf">
+            <AID>11</AID>
+            <Value Datatype="SparseArray" Valuetype="BLOB">
+              <Field Key="32850" Length="40">0211002401000000C3D687FE789E03A1ACDBE5BFCBBC27B6000000000B6D7270646F6D61696E2D31</Field>
+              <Field Key="32849" Length="28">0213001801000000C3D687FE789E03A1ACDBE5BFCBBC27B600000000</Field>
+              <Field Key="32881" Length="12">025000080100000000000001</Field>
+            </Value>
+          </Variable>
+          <Variable Name="DataRecordsTransferSequence">
+            <AID>14</AID>
+            <Value Datatype="Scalar" Valuetype="BLOB" Length="0" />
+          </Variable>
+        </Object>
+        <Object Name="Port 1 - RJ45 (X4233_1)">
+          <ClassRID>9</ClassRID>
+          <Key AID="2">32769</Key>
+          <Variable Name="LADDR">
+            <AID>10</AID>
+            <Value Datatype="Scalar" Valuetype="UINT16">260</Value>
+          </Variable>
+          <Variable Name="DataRecordsConf">
+            <AID>11</AID>
+            <Value Datatype="SparseArray" Valuetype="BLOB">
+              <Field Key="32811" Length="52">020000300100000000008001020A002401000108706F72742D3030311470726F66696E6574786164726976657234393333000000</Field>
+            </Value>
+          </Variable>
+          <Variable Name="DataRecordsTransferSequence">
+            <AID>14</AID>
+            <Value Datatype="Scalar" Valuetype="BLOB" Length="0" />
+          </Variable>
+        </Object>
+        <Object Name="Port 2 - RJ45 (X4233_2)">
+          <ClassRID>9</ClassRID>
+          <Key AID="2">32770</Key>
+          <Variable Name="LADDR">
+            <AID>10</AID>
+            <Value Datatype="Scalar" Valuetype="UINT16">261</Value>
+          </Variable>
+          <Variable Name="DataRecordsConf">
+            <AID>11</AID>
+            <Value Datatype="SparseArray" Valuetype="BLOB" />
+          </Variable>
+          <Variable Name="DataRecordsTransferSequence">
+            <AID>14</AID>
+            <Value Datatype="Scalar" Valuetype="BLOB" Length="0" />
+          </Variable>
+        </Object>
+      </Object>
+      <Object Name="Modul I/O (16 Worte)_1">
+        <ClassRID>7</ClassRID>
+        <Key AID="1">2</Key>
+        <Object Name="Modul I/O (16 Worte)_1">
+          <ClassRID>10</ClassRID>
+          <Key AID="2">1</Key>
+          <Variable Name="LADDR">
+            <AID>10</AID>
+            <Value Datatype="Scalar" Valuetype="UINT16">266</Value>
+          </Variable>
+          <Variable Name="DataRecordsConf">
+            <AID>11</AID>
+            <Value Datatype="SparseArray" Valuetype="BLOB" />
+          </Variable>
+          <Variable Name="DataRecordsTransferSequence">
+            <AID>14</AID>
+            <Value Datatype="Scalar" Valuetype="BLOB" Length="0" />
+          </Variable>
+          <Variable Name="IOmapping">
+            <AID>5</AID>
+            <Value Datatype="Scalar" Valuetype="STRUCT">
+              <Element AID="6" Datatype="Scalar" Valuetype="UINT32">0</Element>
+              <Element AID="7" Datatype="Scalar" Valuetype="UINT16">32</Element>
+              <Element AID="8" Datatype="Scalar" Valuetype="UINT32">0</Element>
+              <Element AID="9" Datatype="Scalar" Valuetype="UINT16">32</Element>
+            </Value>
+          </Variable>
+        </Object>
+      </Object>
+    </Object>
+  </Object>
+</Object>
