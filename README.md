@@ -65,3 +65,4 @@ If you have problems with my .VI upgrade to LabVIEW 18 or build your own.
 
 Alternative:
 Prior to this rapid adaptation of Profinet for LabVIEW, one of the ways you could use Profinet was through the NI hardware and software package: https://www.ni.com/de-de/shop/hardware/products/pxi-profinet-interface-module.html manufactured by KUNBUS: https://www.kunbus.de/df-profinet-io.html
+This method is still valid if your are planning to use industrial ethernet and cannot use a normal ethernet switch.
