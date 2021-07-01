@@ -27,6 +27,7 @@ Please mind the device type of your pump (5) and the IP adress (6). You can chan
 6) Configure communication
 Drag and drop the PROFINET Driver as described in the Siemens guide:
 ![Siemens_TIA_Profinet_Driver](https://user-images.githubusercontent.com/60081398/124133775-75afef00-da82-11eb-986e-82a64d18100a.PNG)
+
 Adjust the IP adress to match the pump in the first 3 numbers:
 ![Configure_profinet_driver_IP](https://user-images.githubusercontent.com/60081398/124134406-19010400-da83-11eb-91d9-105aa9aebdd2.jpg)
 7) Drag and drop the device type of your pump and connect it to the driver using the port. The configuration has to match your physical configuration! If you are using the X1 Port 1 on your pump, you have to connect it to Port 1 in TIA!
