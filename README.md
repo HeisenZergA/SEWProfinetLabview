@@ -22,6 +22,7 @@ By the way: No need to switch of all connections as described by the Siemens gui
 3) Download the GSDML file of the frequency converter to be used in the TIA portal. This can be done either by downloading it from the repo, where there is the data of the DFC20A, or by directly finding your appropriate file in the SEW documentation: https://www.sew-eurodrive.de/os/dud/?tab=software&country=DE&language=de_de&search=TIA
 4) Install the GSDML file into TIA. Here is a quick video: 
 https://user-images.githubusercontent.com/60081398/124129198-d8eb5280-da7d-11eb-9499-e7d77ef0a319.mp4
+
 5) Find pump in the TIA portal:
 ![pump_in_TIA_portal](https://user-images.githubusercontent.com/60081398/124132657-5795bf00-da81-11eb-93a6-d1fb72ad76da.jpg)
 Please mind the device type of your pump (5) and the IP adress (6). You can change the device adress later on, but it always has to match the adress of the driver in the first 3 numbers (e.g. 192.168.30.3 for the pump and 192.168.30.4 for the driver). The device name can be changed as well.
