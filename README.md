@@ -1,4 +1,4 @@
-# Control SEW eurodrive converter via Profinet and LabVIEW
+# Control SEW eurodrive MOVIKIT via Profinet and LabVIEW
 
 Siemens provides an easy guide on how to use Siemens devices with Profinet and LabVIEW. But in fact, you can use TIA and the .dll to implement other devices into your system.
 You will REQUIRE the 32-bit version of LabVIEW!
