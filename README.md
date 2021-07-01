@@ -50,6 +50,7 @@ You can find the codes for the communication here:
 [25871137.pdf](https://github.com/HeisenZergA/SEWProfinetLabview/files/6748825/25871137.pdf)
 In chapter 8 you will find all process data that can be used. The process data can either be statuses in bits that are combined into a single number, e.g.: 1100010111 will lead to 1817 (example from the status word of the running pump -> PI 1) or a number like PI2 that represents the actual speed:
 ![Interface](https://user-images.githubusercontent.com/60081398/124142372-751b5680-da8a-11eb-8311-b128dd5dfff1.PNG)
+
 Behind all that is the PNIO.dll that is fed like a function in a real programming language:
 ![Block_diagram](https://user-images.githubusercontent.com/60081398/124142908-efe47180-da8a-11eb-857d-ddb42564298c.PNG)
 In our .VI we use the following process input data from chapter 8.2 (the data that comes out of the converter... I know....)
