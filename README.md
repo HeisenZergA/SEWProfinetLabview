@@ -16,7 +16,8 @@ The documentation is marked in blue. Download it as well as the Library marked i
 Now you will need follow some parts of the Siemens guide:
 1) Find MAC adress of your ethernet connection
 ![find_physical_adress_ethernet](https://user-images.githubusercontent.com/60081398/124143491-7600b800-da8b-11eb-95a5-1ab670f75c51.PNG)
-No need to switch of all connections as described by the Siemens guide.
+
+By the way: No need to switch of all connections as described by the Siemens guide.
 2) Download and install TIA (https://support.industry.siemens.com/cs/document/109772803/simatic-step-7-incl-safety-and-wincc-v16-trial-download?dti=0&lc=en-WW)
 3) Download the GSDML file of the frequency converter to be used in the TIA portal. This can be done either by downloading it from the repo, where there is the data of the DFC20A, or by directly finding your appropriate file in the SEW documentation: https://www.sew-eurodrive.de/os/dud/?tab=software&country=DE&language=de_de&search=TIA
 4) Install the GSDML file into TIA. Here is a quick video: 
@@ -28,20 +29,20 @@ Please mind the device type of your pump (5) and the IP adress (6). You can chan
 Drag and drop the PROFINET Driver as described in the Siemens guide:
 ![Siemens_TIA_Profinet_Driver](https://user-images.githubusercontent.com/60081398/124133775-75afef00-da82-11eb-986e-82a64d18100a.PNG)
 
-Adjust the IP adress to match the pump in the first 3 numbers:
+7) Adjust the IP adress to match the pump in the first 3 numbers:
 ![Configure_profinet_driver_IP](https://user-images.githubusercontent.com/60081398/124134406-19010400-da83-11eb-91d9-105aa9aebdd2.jpg)
-7) Drag and drop the device type of your pump and connect it to the driver using the port. The configuration has to match your physical configuration! If you are using the X1 Port 1 on your pump, you have to connect it to Port 1 in TIA!
+8) Drag and drop the device type of your pump and connect it to the driver using the port. The configuration has to match your physical configuration! If you are using the X1 Port 1 on your pump, you have to connect it to Port 1 in TIA!
 ![connect_pump_to_profinet](https://user-images.githubusercontent.com/60081398/124137075-9fb6e080-da85-11eb-9f59-7703e808f91a.jpg)
-8) Now for the telegram module of the SEW converter: Click on the converter and go to network view and connect the driver to the converter:
+9) Now for the telegram module of the SEW converter: Click on the converter and go to network view and connect the driver to the converter:
 ![connect_pump_to_profinet_network](https://user-images.githubusercontent.com/60081398/124137503-076d2b80-da86-11eb-864a-30041d09a0dd.jpg)
 Next, click on the converter and switch to the Device view.
-9) Assign the communcation modules (drag and drop) as well as the E-Adress and A-Adress (this will be the adresses, where the information will be sent or received, e.g. 0 to 31)
+10) Assign the communcation modules (drag and drop) as well as the E-Adress and A-Adress (this will be the adresses, where the information will be sent or received, e.g. 0 to 31)
 ![device_view](https://user-images.githubusercontent.com/60081398/124138120-a2660580-da86-11eb-964d-8d2c4f6cd63a.jpg)
-10) Create XML-File and copy it into your Labview project folder:
+11) Create XML-File and copy it into your Labview project folder:
 ![export_xml](https://user-images.githubusercontent.com/60081398/124138541-07b9f680-da87-11eb-8fc6-c41550a13792.jpg)
-11) Open SEW.vi
-12) Paste location of the .XML file and E-Adress and A-Adress into the VI, as well as the MAC adress of the ethernet connection (SMALL LETTERS ONLY!!! NO CAPITAL ONES!!!)
-13) Use .VI provided to communicate with the converter. In the example, we use the converter with a pump. The .VI is supposed to control the speed of the pump, so here is the actual process data used:
+12) Open SEW.vi
+13) Paste location of the .XML file and E-Adress and A-Adress into the VI, as well as the MAC adress of the ethernet connection (SMALL LETTERS ONLY!!! NO CAPITAL ONES!!!)
+14) Use .VI provided to communicate with the converter. In the example, we use the converter with a pump. The .VI is supposed to control the speed of the pump, so here is the actual process data used:
 ![first_process_word](https://user-images.githubusercontent.com/60081398/124140581-e2c68300-da88-11eb-8ca3-d7eb951f5e40.PNG)
 ![speed_control](https://user-images.githubusercontent.com/60081398/124140588-e3f7b000-da88-11eb-8008-0894db54ee58.PNG)
 
