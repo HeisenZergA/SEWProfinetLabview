@@ -9,7 +9,7 @@ And a picture of our pump:
 
 
 Basically, you will need to follow the instructions of the Siemens guide for their "SINAMICS G/S: PROFINET Connection with LabVIEW" with some twists at the end, so please register there to download the .dll required in this project!
-![witte_pump_with_sew_DFC20A](https://user-images.githubusercontent.com/60081398/124143462-6d0fe680-da8b-11eb-8bf0-55ccc25823e9.jpg)
+![siemens_website_labview](https://user-images.githubusercontent.com/60081398/124143800-b6603600-da8b-11eb-82a9-f88e97f3488c.png)
 https://support.industry.siemens.com/cs/document/99684399/sinamics-g-s%3A-profinet-connection-with-labview?dti=0&lc=en-WW
 The documentation is marked in blue. Download it as well as the Library marked in yellow. Unzip the library into your user.lib folder to create e.g. C:\Program Files (x86)\National Instruments\LabVIEW 2018\user.lib\PNIO 
 
