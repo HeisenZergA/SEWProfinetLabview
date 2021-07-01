@@ -1,4 +1,4 @@
-# SEWProfinet
+# Control SEW eurodrive converter via Profinet and LabVIEW
 
 Siemens provides an easy guide on how to use Siemens devices with Profinet and LabVIEW. But in fact, you can use TIA and the .dll to implement other devices into your system.
 You will REQUIRE the 32-bit version of LabVIEW!
@@ -57,12 +57,12 @@ Behind all that is the PNIO.dll that is fed like a function in a real programmin
 In our .VI we use the following process input data from chapter 8.2 (the data that comes out of the converter... I know....)
 ![Process_input_data](https://user-images.githubusercontent.com/60081398/124141129-6e401400-da89-11eb-959d-c7dd3a0441d8.PNG)
 
-Troubleshooting:
+# Troubleshooting
 The main deal is to get the profinet connection established, then the profinet on the pump will switch from red to green.
 ![profinet_failed](https://user-images.githubusercontent.com/60081398/124143149-2a4e0e80-da8b-11eb-8ad7-019d3a3499e0.jpg)
 ![profinet_established](https://user-images.githubusercontent.com/60081398/124143168-2d48ff00-da8b-11eb-9a53-e843d34fd6c5.jpg)
 If you have problems with my .VI upgrade to LabVIEW 18 or build your own.
 
-Alternative:
+# Alternative
 Prior to this rapid adaptation of Profinet for LabVIEW, one of the ways you could use Profinet was through the NI hardware and software package: https://www.ni.com/de-de/shop/hardware/products/pxi-profinet-interface-module.html manufactured by KUNBUS: https://www.kunbus.de/df-profinet-io.html
 This method is still valid if your are planning to use industrial ethernet and cannot use a normal ethernet switch. On the other hand, academic applications do not require this fast and stable method of communication, so if your goal is to just get a pump or motor running, we recommend our method.
