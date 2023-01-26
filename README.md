@@ -72,3 +72,4 @@ This method is still valid if your are planning to use industrial ethernet and c
 
 # Using a secondary network and what to do, when the pump cannot be found?
 You must turn off DHCP on the network you are using (a secondary one in this case) and add the IP address of your Ethernet to an address that matches that of your pump in the first 3 numbers
+![ip_config](https://user-images.githubusercontent.com/60081398/214833827-8a5c50ce-7240-40b0-87ba-c81592feb02b.png)
