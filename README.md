@@ -63,6 +63,10 @@ The main deal is to get the profinet connection established, then the profinet o
 ![profinet_failed](https://user-images.githubusercontent.com/60081398/124143149-2a4e0e80-da8b-11eb-8ad7-019d3a3499e0.jpg)
 ![profinet_established](https://user-images.githubusercontent.com/60081398/124143168-2d48ff00-da8b-11eb-9a53-e843d34fd6c5.jpg)
 If you have problems with my .VI upgrade to LabVIEW 18 or build your own.
+# Using a secondary network and what to do, when the pump cannot be found?
+You must turn off DHCP on the network you are using (a secondary one in this case) and add the IP address of your Ethernet to an address that matches that of your pump in the first 3 numbers
+![ip_config](https://user-images.githubusercontent.com/60081398/214833827-8a5c50ce-7240-40b0-87ba-c81592feb02b.png)
+
 
 # Manual Control and Configuration
 You can download MOVISUITE to control and set up SEW products: https://www.sew-eurodrive.de/os/dud/?tab=software&country=de&language=en_us&search=movisuite
@@ -70,6 +74,4 @@ You can download MOVISUITE to control and set up SEW products: https://www.sew-e
 Prior to this rapid adaptation of Profinet for LabVIEW, one of the ways you could use Profinet was through the NI hardware and software package: https://www.ni.com/de-de/shop/hardware/products/pxi-profinet-interface-module.html manufactured by KUNBUS: https://www.kunbus.de/df-profinet-io.html
 This method is still valid if your are planning to use industrial ethernet and cannot use a normal ethernet switch. On the other hand, academic applications do not require this fast and stable method of communication, so if your goal is to just get a pump or motor running, we recommend our method.
 
-# Using a secondary network and what to do, when the pump cannot be found?
-You must turn off DHCP on the network you are using (a secondary one in this case) and add the IP address of your Ethernet to an address that matches that of your pump in the first 3 numbers
-![ip_config](https://user-images.githubusercontent.com/60081398/214833827-8a5c50ce-7240-40b0-87ba-c81592feb02b.png)
+
