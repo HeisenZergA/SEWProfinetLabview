@@ -66,7 +66,7 @@ If you have problems with my .VI upgrade to LabVIEW 18 or build your own.
 # Using a secondary network and what to do, when the pump cannot be found?
 You must turn off DHCP on the network you are using (a secondary one in this case) and add the IP address of your Ethernet to an address that matches that of your pump in the first 3 numbers
 ![ip_config](https://user-images.githubusercontent.com/60081398/214833827-8a5c50ce-7240-40b0-87ba-c81592feb02b.png)
-
+# Should you get an error like PNIO_ERR_NO_CONNECTION shown as 0x00000301 or 301, there is a chance that you have to reinstall WinPcap v4.1.3 (https://www.winpcap.org/install/). Look if npcap is installed, you might have to uninstall it.
 
 # Manual Control and Configuration
 You can download MOVISUITE to control and set up SEW products: https://www.sew-eurodrive.de/os/dud/?tab=software&country=de&language=en_us&search=movisuite
